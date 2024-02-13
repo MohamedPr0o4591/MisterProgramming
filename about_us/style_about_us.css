@@ -1,0 +1,115 @@
+header .content .images img {
+    max-width: 100%;
+}
+
+section {
+    opacity: 1;
+    z-index: 1;
+    transform: scale(1, 1);
+    direction: ltr;
+}
+
+section .container {
+    width: 80%;
+    margin: 2rem auto;
+}
+
+section .container>h2 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.about_us-2 .box {
+    margin-top: 2rem;
+}
+
+.about_us-2>.container>.inner>.box>ul>.numbers {
+    width: 5rem;
+    height: 5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #fff;
+    border-radius: 5rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.about_us-2 .inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+}
+
+.about_us-2 .inner .box>ul {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.about_us-2 .inner .box>ul>li:last-child {
+    display: flex;
+    align-items: center;
+}
+
+.ourDetails .container .content {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.ourDetails .container {
+    margin-top: 5rem;
+}
+
+.ourTeam .inner-container {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+}
+
+.ourTeam .inner-container a {
+    color: #fff;
+    text-align: center;
+}
+
+.ourTeam .inner-container img {
+    max-width: 12rem;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    outline: 5px solid tomato;
+    margin-bottom: 1rem;
+}
+
+.ourTeam .inner-container h3 {
+    font-size: 1.5rem;
+}
+
+.ourTeam .inner-container p {
+    color: tomato;
+}
+
+body.lightMode .about_us-2>.container>.inner>.box>ul>.numbers {
+    border-color: #000;
+}
+
+@media (min-width : 768px) and (max-width : 1200px) {
+    .about_us-2 .inner {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    section .container>h2 {
+        font-size: 1.7rem;
+    }
+}
+
+@media (min-width : 320px) and (max-width : 767px) {
+    section .container>h2 {
+        font-size: 1.5rem;
+    }
+
+    .about_us-2 .inner,
+    .ourDetails .container .content,
+    .ourTeam .inner-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

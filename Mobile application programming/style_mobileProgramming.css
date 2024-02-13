@@ -1,0 +1,372 @@
+:root {
+    --shadow-color: rgba(0, 0, 0, .2);
+}
+
+.ourProducts {
+    opacity: 1;
+    z-index: 1;
+    transform: scale(1, 1);
+    direction: ltr;
+    width: 90%;
+    margin: 3rem auto;
+}
+
+.ourProducts .headTitle {
+    text-align: center;
+    line-height: 3;
+}
+
+.ourProducts .body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 3rem;
+}
+
+.ourProducts .body .content>ul,
+.ourProducts .body .content>ul li>ul li>ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: start;
+}
+
+.ourProducts .body .content>ul {
+    gap: 3rem;
+}
+
+.ourProducts .body .content>ul li>ul {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.ourProducts .body .content>ul li>ul>li {
+    text-align: start;
+}
+
+.ourProducts .body .content>ul li>ul li>i {
+    font-size: 6rem;
+}
+
+.ourProducts .body .content>ul li img {
+    width: 100%;
+}
+
+.ourProducts .headTitle>ul>li>h4 {
+    font-weight: 200;
+}
+
+.ourProducts .body .content>ul li:hover i {
+    color: tomato;
+}
+
+.ourProducts .body .content>ul li:hover {
+    transform: scale(1.05, 1.05);
+}
+
+.multi-lang::before {
+    content: '\e4a1';
+}
+
+header .content .images img {
+    max-width: 50rem;
+    mix-blend-mode: luminosity;
+}
+
+.projectManagement {
+    padding: 3rem 10%;
+    opacity: 1;
+    z-index: 1;
+    transform: scale(1, 1);
+    direction: ltr;
+    background: linear-gradient(to bottom right, #4545be14, #0622736b);
+    box-shadow: 0 .1rem .4rem #fdfdfd;
+}
+
+.projectManagement .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 3rem;
+}
+
+
+.projectManagement .container .content>ul h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.projectManagement .container .content>ul p {
+    color: #f5f5dc6b;
+}
+
+.projectManagement .container .content:nth-child(2) {
+    text-align: end;
+}
+
+.projectManagement .container img {
+    max-width: 35rem;
+}
+
+body.lightMode .projectManagement .container .content>ul p {
+    color: #00000065;
+}
+
+body.lightMode .projectManagement {
+    box-shadow: 0 .1rem .4rem var(--shadow-color);
+}
+
+.ourDetails {
+    margin: 2rem 0;
+    opacity: 1;
+    transform: scale(1, 1);
+    z-index: 1;
+    direction: ltr;
+    color: #fff;
+}
+
+.ourDetails .container {
+    width: 75%;
+    margin: auto;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 .1rem .4rem var(--shadow-color);
+    background: linear-gradient(to right bottom, #3a3ac28a, #080e43d4);
+}
+
+.ourDetails .container .content {
+    padding: 5rem 1%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    animation: colorFul 6s linear infinite;
+    background: linear-gradient(to right bottom, pink, 30%, transparent);
+}
+
+@keyframes colorFul {
+    100% {
+        filter: hue-rotate(350deg);
+    }
+}
+
+.ourDetails .container .content .box {
+    text-align: center;
+}
+
+.ourDetails .container .content .box h2 {
+    font-size: 4rem;
+}
+
+.ourDetails .container .content .box p {
+    font-size: 1.4rem;
+}
+
+.ourProjects {
+    margin: 3rem auto;
+    z-index: 1;
+    opacity: 1;
+    transform: scale(1, 1);
+    width: 86%;
+}
+
+.ourProjects>h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    letter-spacing: .1em;
+    pointer-events: none;
+    margin-bottom: 1rem;
+}
+
+.ourProjects .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    direction: ltr;
+}
+
+.ourProjects .container .card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.ourProjects .container .card a {
+    color: #fdfdfd;
+}
+
+body.lightMode .container .card a {
+    color: #000;
+}
+
+.ourProjects .container .card img {
+    width: 100%;
+    opacity: 0.8;
+}
+
+.ourProjects .container .card .context {
+    text-align: center;
+    margin: 0.6rem 0;
+    font-size: 1rem;
+}
+
+.ourProjects .container .card:hover a {
+    color: tomato;
+}
+
+.ourProjects .container .card:hover {
+    box-shadow: 0 .1rem .4rem #000;
+    background: #fdfdfd;
+}
+
+footer {
+    opacity: 1;
+    transform: scale(1, 1);
+    z-index: 1;
+}
+
+@media (min-width:1201px) and (max-width :1535px) {
+    header .content .text h3 {
+        font-size: 2rem;
+    }
+
+    header .content .text p {
+        font-size: 1rem;
+    }
+
+    .ourProducts .body .content>ul li>ul li>ul {
+        gap: 0.3rem;
+    }
+
+    .ourProducts .body .content>ul li>ul li>i {
+        font-size: 4rem;
+    }
+
+    .ourProducts .body .content>ul {
+        gap: 2rem;
+    }
+}
+
+@media (min-width:768px) and (max-width :1200px) {
+    .Screen-768 {
+        display: none;
+    }
+
+    header .content .text h3 {
+        font-size: 2rem;
+    }
+
+    header .content .text p {
+        font-size: .9rem;
+    }
+
+    .ourProducts .body .content>ul li>ul li>ul {
+        gap: 0.5rem;
+    }
+
+    .ourProducts .body .content>ul li>ul li>ul>li>h3,
+    .ourDetails .container .content .box p {
+        font-size: 1rem;
+    }
+
+    .ourProducts .body .content>ul li>ul li>ul>li>p {
+        font-weight: 200;
+        font-size: .9rem;
+    }
+
+    .ourProducts .body .content>ul li>ul li>i,
+    .ourDetails .container .content .box h2 {
+        font-size: 3rem;
+    }
+
+    .ourProducts .headTitle>ul>li>h4 {
+        font-weight: 200;
+    }
+
+    .projectManagement .container,
+    .ourProducts .body {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .projectManagement .container .content:nth-child(2) {
+        text-align: center;
+    }
+
+    .ourProjects .container {
+        grid-template-columns: repeat(2, 1fr);
+        direction: ltr;
+    }
+
+    .ourProducts .body .content>ul>li {
+        text-align: center;
+    }
+
+    .ourProducts .body .content>ul>li img {
+        max-width: 60%;
+    }
+
+}
+
+@media (min-width : 320px) and (max-width :767px) {
+    .ourProducts .headTitle>ul>li>h2 {
+        font-size: 1rem;
+        line-height: 2;
+    }
+
+    .ourProducts .headTitle>ul>li>p {
+        line-height: 2;
+        font-size: .9rem;
+        font-weight: 200;
+    }
+
+    .ourProducts .body .content>ul li>ul li>i {
+        font-size: 4rem;
+    }
+
+    .ourProducts .body .content>ul li>ul>li>h3 {
+        font-size: 1.3rem;
+    }
+
+    .ourProducts .body .content>ul li>ul>li>p {
+        font-size: .9rem;
+        font-weight: 200;
+    }
+
+    .ourDetails .container .content .box p {
+        font-size: .9rem;
+    }
+
+    .ourProducts .body .content>ul li>ul li>ul {
+        gap: 0.5rem;
+    }
+
+    .ourProducts .body,
+    .projectManagement .container,
+    .ourDetails .container .content,
+    .ourProjects .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .projectManagement .container .content>ul h2,
+    .ourProjects>h2 {
+        font-size: 1.5rem;
+    }
+
+    .projectManagement .container img {
+        max-width: 100%;
+    }
+
+    .ourDetails .container .content {
+        gap: 2rem;
+    }
+
+    .ourDetails .container .content .box {
+        border-top: dashed 4px #fdfdfd;
+    }
+
+    .ourDetails .container .content .box:first-child {
+        border: none;
+    }
+
+    .ourDetails .container .content .box h2 {
+        font-size: 2.5rem;
+    }
+}

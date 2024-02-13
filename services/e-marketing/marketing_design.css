@@ -1,0 +1,170 @@
+section {
+    z-index: 0;
+    opacity: 1;
+    transform: scale(1, 1);
+    direction: ltr;
+    margin: 4rem auto;
+}
+
+section .container {
+    width: 80%;
+    margin: auto;
+}
+
+.service-2 h2 {
+    text-align: center;
+    pointer-events: none;
+    font-size: 2.5rem;
+}
+
+.service-2 .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.service-2 .container .box ul {
+    text-align: center;
+    line-height: 3;
+}
+
+.service-2 .container .box ul p {
+    text-align: start;
+    line-height: 1.5;
+}
+
+.service-2 .container .box {
+    box-shadow: 0 .1rem .4rem rgba(255, 255, 255, .2);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+}
+
+.service-2 .container .box:hover {
+    background: linear-gradient(transparent 20%, tomato);
+    box-shadow: 0 .1rem .4rem rgba(255, 255, 255, .2);
+}
+
+.management {
+    background: linear-gradient(to bottom right, #4545be14, #0622736b);
+}
+
+.management .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding: 1rem;
+}
+
+body.lightMode .service-2 .container .box {
+    box-shadow: 0 .1rem .4rem rgba(0, 0, 0, .2);
+}
+
+.management .container img {
+    max-width: 80%;
+    filter: drop-shadow(0 .1rem .4rem rgba(255, 255, 255, .5));
+}
+
+.management .container .project {
+    text-align: center;
+}
+
+.management .container .content ul {
+    line-height: 4;
+}
+
+.management .container .content ul small {
+    color: tomato;
+    pointer-events: none;
+}
+
+.management .container .content ul p {
+    line-height: 1.5;
+}
+
+.management .container .content ul h2 {
+    font-size: 2.5rem;
+    line-height: 1.5;
+}
+
+.headTitle h2 {
+    font-size: 2.5rem;
+}
+
+.service-2 .container .box ul h3 {
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+@media (min-width:1201px) and (max-width :1535px) {
+    .management .container .content ul h2 {
+        font-size: 2rem;
+    }
+
+    .ourProducts .body {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ourDetails .container .content .box h2 {
+        font-size: 2.5rem;
+    }
+
+    .ourDetails .container .content .box p {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width:768px) and (max-width :1200px) {
+    .service-2 h2 {
+        font-size: 2rem;
+    }
+
+    .headTitle h2 {
+        font-size: 1.5rem;
+    }
+
+    .service-2 .container,
+    .ourDetails .container .content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .management .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .management .container,
+    .ourDetails .container .content {
+        gap: 4rem;
+    }
+}
+
+@media (min-width : 320px) and (max-width :767px) {
+    .service-2 h2 {
+        font-size: 1.3rem;
+    }
+
+    .service-2 .container,
+    .management .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .management .container img {
+        max-width: 100%;
+    }
+
+    .management .container .content ul h2 {
+        font-size: 1.5rem;
+    }
+
+    .management .container {
+        gap: 4rem;
+    }
+
+    .management .container .content ul {
+        line-height: 2;
+    }
+
+    .ourProducts .headTitle>ul>li>h2 {
+        letter-spacing: .1em;
+    }
+}

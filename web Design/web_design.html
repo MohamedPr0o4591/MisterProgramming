@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Design</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../Mobile application programming/style_mobileProgramming.css">
+    <link rel="stylesheet" href="web_design.css">
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+
+    <div class="pop-noti">
+        <div class="container">
+            <div class="box">
+                <div class="images">
+                    <div class="img1">
+                        <i class='bx bxl-instagram-alt'></i>
+                    </div>
+                    <div class="img2">
+                        <i class='bx bxl-facebook'></i>
+                    </div>
+                    <div class="img3">
+                        <i class='bx bxl-whatsapp'></i>
+                    </div>
+                    <div class="img4" id="close-icon">
+                        <i class='bx bx-x'></i>
+                    </div>
+                </div>
+                <div class="content">
+                    <h4>
+                        Need help?
+                    </h4>
+                    <small>
+                        Contact us faster
+                    </small>
+                </div>
+
+                <div class="outline">
+                    <div class="child">
+                        <div class="header">
+                            <ul>
+                                <li><i class='bx bxl-whatsapp'></i></li>
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <h3>
+                                                Start the conversation
+                                            </h3>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                Start a quick chat with one of Mr. Programming's clients
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="content">
+                            <ul>
+                                <li>
+                                    <p>
+                                        Choose the required section and the Mr. Programming team will respond to you as
+                                        soon as possible
+                                    </p>
+                                </li>
+                                <li class="whatsapp">
+                                    <a href="https://wa.me/+201010662336/" target="_blank">
+                                        <ul>
+                                            <li>
+                                                <i class='bx bxl-whatsapp'></i>
+                                            </li>
+                                            <ul>
+                                                <li>
+                                                    <h4>
+                                                        Sales Team
+                                                    </h4>
+                                                </li>
+                                                <li>
+                                                    <p>
+                                                        Contact us for new requests
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                            <li>
+                                                <i class='bx bx-link-external' id="link-icon"></i>
+                                            </li>
+                                        </ul>
+                                    </a>
+                                </li>
+
+                                <li class="fb">
+                                    <a href="https://www.facebook.com/misterprogramming/" target="_blank">
+                                        <ul id="fb-link">
+                                            <li>
+                                                <i class='bx bxl-facebook'></i>
+                                            </li>
+                                            <ul>
+                                                <li>
+                                                    <h4>
+                                                        Sales Team
+                                                    </h4>
+                                                </li>
+                                                <li>
+                                                    <p>
+                                                        Contact us for new requests
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                            <li>
+                                                <i class='bx bx-link-external' id="link-icon"></i>
+                                            </li>
+                                        </ul>
+                                    </a>
+                                </li>
+
+                                <li class="insta">
+                                    <a href="https://www.linkedin.com/company/misterprogramming/" target="_blank">
+                                        <ul id="insta-link">
+                                            <li>
+                                                <i class='bx bxl-linkedin'></i>
+                                            </li>
+                                            <ul>
+                                                <li>
+                                                    <h4>
+                                                        Sales Team
+                                                    </h4>
+                                                </li>
+                                                <li>
+                                                    <p>
+                                                        Contact us for new requests
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                            <li>
+                                                <i class='bx bx-link-external' id="link-icon"></i>
+                                            </li>
+                                        </ul>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <nav>
+        <div class="logo">
+            <img src="../Assets/logo.png" title="logo-site" id="logoSite">
+            <canvas></canvas>
+        </div>
+
+        <div class="navbar ">
+            <ul class="navbar-largeMorror ">
+                <li>
+                    <a href="../index.html#home">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="../index.html#services">
+                        Services
+                    </a>
+                </li>
+                <li>
+                    <a href="../index.html#projects">
+                        Projects
+                    </a>
+                </li>
+                <li>
+                    <a href="../index.html#contact">
+                        Contact
+                    </a>
+                </li>
+                <li>
+                    <a href="../index.html#ourInfo">
+                        About us
+                    </a>
+                </li>
+                <li>
+                    <a href="../index.html#blog">
+                        Blog
+                    </a>
+                </li>
+                <li id="darkMode">
+                    <i class='bx bxs-moon'></i>
+                </li>
+                <li id="lightMode">
+                    <i class='bx bx-sun'></i>
+                </li>
+            </ul>
+            <ul class="navbar-screen-768">
+                <li id="darkMode">
+                    <i class='bx bxs-moon'></i>
+
+                </li>
+                <li id="lightMode">
+                    <i class='bx bx-sun'></i>
+
+                </li>
+                <li id="list_open">
+                    <a href="#list" id="open">
+                        <i class='bx bx-list-ul'></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#list" id="close">
+                        <i class='bx bx-list-ul'></i>
+                    </a>
+                </li>
+                <li>
+                    <ul>
+                        <li>
+                            <a href="../index.html#home">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../index.html#services">
+                                Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../index.html#projects">
+                                Projects
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../index.html#contact">
+                                Contact
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../index.html#ourInfo">
+                                About us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../index.html#blog">
+                                Blog
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <header id="home">
+        <div class="images">
+            <img src="../Assets/stars1.webp" id="stars">
+            <!-- <img src="Assets/moon2.webp" id="moon"> -->
+            <i class='bx bxs-moon' id="moon2"></i>
+            <i class='bx bxs-circle' id="sun2"></i>
+        </div>
+        <div class="content ">
+            <div class="text ">
+                <ul>
+                    <li>
+                        <h3>Programming and web design</h3>
+                    </li>
+                    <li>
+                        <p>
+                            There is no doubt that the design is what adds an aesthetic touch to your site that gives it
+                            a spirit of fascination, and it is one of the most important factors that attract visitors,
+                            so we at Mr Programming make every effort to reach a modern and attractive design that suits
+                            your
+                            audience and your field, provided that the design is compatible with all art standards , and
+                            color coordination.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="images">
+                <img src="../Assets/web management.gif" id="img_webManagement">
+            </div>
+        </div>
+    </header>
+
+    <section class="ourProducts">
+        <div class="headTitle">
+            <ul>
+                <li>
+                    <h2>
+                        Features of programming and designing a website with Mr Programming
+                    </h2>
+                </li>
+                <li>
+                    <h4>
+                        General features Of course, all site features differ as required
+                    </h4>
+                </li>
+            </ul>
+        </div>
+
+        <div class="body">
+            <div class="content">
+                <ul>
+                    <li>
+                        <ul>
+                            <li>
+                                <i class='bx bx-mail-send'></i>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li>
+                                        <h3>
+                                            Official emails
+                                        </h3>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Official emails in the name of the domain to all employees of the company
+                                            for easy communication between them and customers, in a professional manner.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <ul>
+                            <li>
+                                <i class='bx bx-desktop'></i>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li>
+                                        <h3>
+                                            Responsiveness to screens
+                                        </h3>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Designs compatible with all types of screens, whether desktops - tablets or
+                                            phones of all sizes.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <ul>
+                            <li>
+                                <i class='bx bx-server'></i>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li>
+                                        <h3>
+                                            SEO compliant
+                                        </h3>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            SEO-friendly website by using the latest technologies and error-free,
+                                            SEO-compliant code.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <ul>
+                            <li>
+                                <i class='bx bx-support'></i>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li>
+                                        <h3>
+                                            Technical Support
+                                        </h3>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            We offer a free technical support service for a period of 6 months to a year
+                                            for projects
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="content">
+                <ul>
+                    <li>
+                        <img src="../Assets/Mobile-Mockups-1024x1024.png">
+                    </li>
+                </ul>
+            </div>
+
+            <div class="content">
+                <ul>
+                    <li>
+                        <ul>
+                            <li>
+                                <i class='bx bx-palette'></i>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li>
+                                        <h3>
+                                            Dynamic decision
+                                        </h3>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Fully dynamic website design, you can add and edit content with great ease
+                                            through your control panel.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <ul>
+                            <li>
+                                <i class='bx bxs-timer'></i>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li>
+                                        <h3>
+                                            Punctuality
+                                        </h3>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            The site is linked to your own domain of your choice (com/net/org), and the
+                                            entire site is delivered within the specified period.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <ul>
+                            <li>
+                                <i class='bx bx-server'></i>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li>
+                                        <h3>
+                                            Multiple hosts
+                                        </h3>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Mr Programming provides multiple different hostings, suitable for your use,
+                                            activity, and the number of visitors expected on your site.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <ul>
+                            <li>
+                                <i class='bx bx-check-shield'></i>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li>
+                                        <h3>
+                                            Integrated protection
+                                        </h3>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            The best encryption and security methods to reach the highest levels of
+                                            application protection.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="projectManagement">
+        <div class="container">
+            <div class="content">
+                <ul>
+                    <li>
+                        <h2>Control panel to easily manage the application</h2>
+                    </li>
+                    <li>
+                        <p>
+                            There is no doubt that the ease of navigation between the elements of the application is one
+                            of the most important factors for the success of the application. Facilitating project
+                            management is the desired goal for any organization. Therefore, in Mr Programming, we offer
+                            you a
+                            professional management panel to manage your applications, with ease.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="content">
+                <img src="../Assets/giphy.gif">
+            </div>
+        </div>
+    </section>
+
+    <section class="ourDetails">
+
+        <div class="container">
+            <div class="content">
+                <div class="box">
+                    <ul>
+                        <li>
+                            <h2 id="fifty">
+                                +200
+                            </h2>
+                        </li>
+                        <li>
+                            <p>
+                                Different sites
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="box">
+                    <ul>
+                        <li>
+                            <h2>
+                                +50
+                            </h2>
+                        </li>
+                        <li>
+                            <p>
+                                News sites
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="box">
+                    <ul>
+                        <li>
+                            <h2>
+                                +150
+                            </h2>
+                        </li>
+                        <li>
+                            <p>
+                                Corporate sites
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="box">
+                    <ul>
+                        <li>
+                            <h2>
+                                +60
+                            </h2>
+                        </li>
+                        <li>
+                            <p>
+                                Electronic stores
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="ourProjects">
+        <h2>
+            Our site projects
+        </h2>
+        <div class="container">
+            <div class="card">
+                <a href="#">
+                    <div class="image">
+                        <img src="../Assets/زينة-جفري-567x425.jpg">
+                    </div>
+
+                    <div class="context">
+                        <p>
+                            Trainer Zina Jefri's website
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="#">
+                    <div class="image">
+                        <img src="../Assets/موقع-الروضة-للتصدير-567x425.jpg">
+                    </div>
+
+                    <div class="context">
+                        <p>
+                            Al-Rawdah site for export
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="#">
+                    <div class="image">
+                        <img src="../Assets/سافر-567x425.jpg">
+                    </div>
+
+                    <div class="context">
+                        <p>
+                            Diyar Tourism website
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="#">
+                    <div class="image">
+                        <img src="../Assets/فل-تانك-567x425.jpg">
+                    </div>
+
+                    <div class="context">
+                        <p>
+                            Full Tank website
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="#">
+                    <div class="image">
+                        <img src="../Assets/شغالات-567x425.jpg">
+                    </div>
+
+                    <div class="context">
+                        <p>
+                            Jeddah maid site
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="#">
+                    <div class="image">
+                        <img src="../Assets/محصول2-567x425.jpg">
+                    </div>
+
+                    <div class="context">
+                        <p>
+                            Mahsoul site
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="#">
+                    <div class="image">
+                        <img src="../Assets/معدات-567x425.jpg">
+                    </div>
+
+                    <div class="context">
+                        <p>
+                            Moaedat site
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="#">
+                    <div class="image">
+                        <img src="../Assets/موقع-خدمات-567x425.jpg">
+                    </div>
+
+                    <div class="context">
+                        <p>
+                            Khadamatt site
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section> -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="box">
+                <ul>
+                    <li class="logo">
+                        <img src="../Assets/logo.png" title="logo-site" id="logoSite">
+                    </li>
+                    <li class="logo">
+                        <p>
+                            Mr. Programming is a mobile application and web design programming and design company. Since
+                            2023 and
+                            We are working on
+                            Developing and programming smart phone applications and designing websites. Contact us now
+                            .. Our team is in
+                            waiting for you
+                        </p>
+                    </li>
+
+                    <li>
+                        <ul class="social-media">
+                            <li>
+                                <a href="https://www.facebook.com/misterprogramming/" target="_blank">
+                                    <i class='bx bxl-facebook'></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/company/misterprogramming/" target="_blank">
+                                    <i class='bx bxl-linkedin'></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://wa.me/+201010662336/" target="_blank">
+                                    <i class='bx bxl-whatsapp'></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <ul>
+                    <li>
+                        <h2>Contact with us</h2>
+                    </li>
+                    <li>
+                        <p>
+                            Phone: +201010662336
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Mail: Info@misterprogramming.com
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <ul>
+                    <li>
+                        <h2>Quick links</h2>
+                    </li>
+                    <li>
+                        <a href="../index.html#home">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../index.html#services">
+                            Services
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../index.html#projects">
+                            Projects
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../index.html#contact">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <ul>
+                    <li>
+                        <h2>Latest Our projects</h2>
+                    </li>
+                    <li>
+                        <p>ZOLA App</p>
+                    </li>
+                    <li>
+                        <p>SER Taxi</p>
+                    </li>
+                    <li>
+                        <p>TAYA Medical App</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <span></span>
+    </footer>
+
+    <script src="../js/basic.js"></script>
+</body>
+
+</html>

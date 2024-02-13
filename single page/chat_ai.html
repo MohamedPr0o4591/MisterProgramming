@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat AI | Mr-Programming</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../Assets/favicon.png" type="image/x-icon">
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- css customization -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../Mobile application programming/style_mobileProgramming.css">
+    <link rel="stylesheet" href="../services/seo/seo_style.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            outline: none;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        nav.active .navbar>.navbar-screen-768>li>ul {
+
+            animation: single_rotate35 .5s both ease .3s;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        header .content .text>ul>li a {
+            color: #090;
+            background: #000;
+            line-height: 5;
+            border-bottom: none;
+            padding: 8px 10px;
+            border-radius: 1em;
+            margin-right: 2rem;
+        }
+
+        #IOS {
+            color: #fdfdfd;
+        }
+
+        .faq {
+            width: 80%;
+            margin: 2rem auto;
+            display: grid;
+            grid-template-columns: 3fr 5fr;
+        }
+
+        .faq h2 {
+            font-size: 9em;
+            text-shadow: 0 0 1rem red;
+            color: transparent;
+        }
+
+        .faq .content .faq-box {
+            padding-bottom: .5em;
+            border-bottom: 2px groove #fdfdfd;
+        }
+
+        .faq .content .faq-box>ul>li>a {
+            color: #ffff;
+        }
+
+        .faq .content .faq-box>ul>li>a>ul {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .faq .content .faq-box>ul,
+        .faq .content .container {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        #answers,
+        #arrow-up {
+            display: none;
+        }
+
+        .faq .content .container .faq-box p {
+            opacity: 0.5;
+        }
+
+        .faq .content .container .faq-box.active #arrow-up,
+        .faq .content .container .faq-box.active #answers {
+            display: block;
+        }
+
+        .faq .content .container .faq-box.active #arrow-down {
+            display: none;
+        }
+
+        header .content .images img {
+            max-width: 30rem;
+            filter: drop-shadow(0 2rem 1.4rem #403876);
+        }
+
+        body.lightMode header .content .images img {
+            filter: drop-shadow(0 2rem 1.4rem #d1e3fa);
+        }
+
+        .ourProducts .body .content>ul li img {
+            width: 33rem;
+        }
+
+        .accordion_1 {
+            --bs-body-bg: none;
+            --bs-body-color: none;
+            --bs-border-color: none;
+            --bs-body-color: #ffff;
+            --bs-primary-bg-subtle: none;
+            --bs-primary-text-emphasis: #fff;
+            --bs-accordion-btn-focus-box-shadow: none;
+            --bs-border-radius: none;
+            --bs-accordion-btn-active-icon: none;
+            --bs-accordion-btn-icon: none;
+        }
+
+        body.lightMode .accordion_1 {
+            --bs-body-color: #000;
+            --bs-primary-text-emphasis: #000;
+        }
+
+        .accordion-item {
+            border-bottom: 2px groove #fdfdfd;
+        }
+
+        .accordion-button::after {
+            content: "\ed91";
+            width: auto;
+            height: auto;
+            font-family: boxicons !important;
+        }
+
+        .accordion-body>p {
+            letter-spacing: .1em;
+            opacity: 0.5;
+        }
+
+        @keyframes single_rotate35 {
+            0% {
+                transform: translateX(-180%);
+            }
+
+            100% {
+                transform: translateX(-35rem);
+            }
+        }
+
+        @keyframes single_rotate85 {
+            0% {
+                transform: translateX(-150%);
+            }
+
+            100% {
+                transform: translateX(-85%);
+            }
+        }
+
+        @keyframes single_rotate75 {
+            0% {
+                transform: translateX(-150%);
+            }
+
+            100% {
+                transform: translateX(-75%);
+            }
+        }
+
+        @media (min-width:320px) and (max-width :767px) {
+            .ourProducts .body .content>ul li img {
+                width: 100%;
+            }
+        }
+
+        @media (min-width:768px) and (max-width :1200px) {
+            .ourProducts .body .content>ul li img {
+                width: 50rem;
+            }
+        }
+
+        @media (min-width:320px) and (max-width :1200px) {
+            .faq {
+                grid-template-columns: 1fr
+            }
+
+            .ourProducts .body,
+            .projectManagement .container,
+            .ourDetails .container .content {
+                display: block;
+            }
+        }
+
+        @media (min-width: 320px) and (max-width : 380px) {
+            nav.active .navbar>.navbar-screen-768>li>ul {
+                animation: single_rotate75 .5s ease both .3s;
+                left: 0;
+            }
+
+            canvas {
+                max-width: 10rem;
+            }
+        }
+
+        @media (min-width: 381px) and (max-width : 420px) {
+            nav.active .navbar>.navbar-screen-768>li>ul {
+                transform: translateX(-100%);
+                animation: none;
+                left: 50%;
+            }
+
+            canvas {
+                max-width: 15rem;
+            }
+        }
+
+        @media (min-width: 421px) and (max-width : 768px) {
+            nav.active .navbar>.navbar-screen-768>li>ul {
+                animation: single_rotate85 .5s ease both .3s;
+                left: 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- nav bar -->
+    <nav>
+        <div class="logo">
+            <img src="../Assets/logo.png" title="logo-site" id="logoSite">
+            <canvas></canvas>
+        </div>
+
+        <div class="navbar ">
+            <ul class="navbar-largeMorror ">
+                <li>
+                    <a href="../index.html#home">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="../index.html#services">
+                        Services
+                    </a>
+                </li>
+                <li>
+                    <a href="../index.html#projects">
+                        Projects
+                    </a>
+                </li>
+                <li>
+                    <a href="../index.html#contact">
+                        Contact
+                    </a>
+                </li>
+                <li>
+                    <a href="../index.html#ourInfo">
+                        About us
+                    </a>
+                </li>
+                <li>
+                    <a href="../index.html#blog">
+                        Blog
+                    </a>
+                </li>
+                <li id="darkMode">
+                    <i class='bx bxs-moon'></i>
+                </li>
+                <li id="lightMode">
+                    <i class='bx bx-sun'></i>
+                </li>
+            </ul>
+            <ul class="navbar-screen-768">
+                <li id="darkMode">
+                    <i class='bx bxs-moon'></i>
+
+                </li>
+                <li id="lightMode">
+                    <i class='bx bx-sun'></i>
+
+                </li>
+                <li id="list_open">
+                    <a href="#list" id="open">
+                        <i class='bx bx-list-ul'></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#list" id="close">
+                        <i class='bx bx-list-ul'></i>
+                    </a>
+                </li>
+                <li>
+                    <ul>
+                        <li>
+                            <a href="#home">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#services">
+                                Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#projects">
+                                Projects
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contact">
+                                Contact
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#ourInfo">
+                                About us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#blog">
+                                Blog
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <!-- header section -->
+    <header id="home">
+        <div class="images">
+            <img src="../Assets/stars1.webp" id="stars">
+            <!-- <img src="Assets/moon2.webp" id="moon"> -->
+            <i class='bx bxs-moon' id="moon2"></i>
+            <i class='bx bxs-circle' id="sun2"></i>
+        </div>
+        <div class="content ">
+            <div class="text ">
+                <ul>
+                    <li>
+                        <h3>
+                            Chat AI Application
+                        </h3>
+                    </li>
+                    <li>
+                        <p>
+                            AI Chat is an application that uses artificial intelligence technology to improve users'
+                            experience in communicating with others over the Internet.
+                        </p>
+                    </li>
+                    <li class="largeMirror">
+                        <a href="" target="_blank">
+                            <i class='bx bxl-android'></i> Android
+                        </a>
+                        <a href="" target="_blank" id="IOS">
+                            <i class='bx bxl-apple'></i> IOS
+                        </a>
+                    </li>
+                    <li class="Screen-768">
+                        <a href="">
+                            Take a look
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="images">
+                <img src="../Assets/chat-ai-2.png">
+            </div>
+        </div>
+    </header>
+
+    <!-- projects section -->
+    <section class="ourProducts">
+        <div class="headTitle">
+            <ul>
+                <li>
+                    <h2>
+                        Features of programming the SER Taxi application with Mr. Programming
+                    </h2>
+                </li>
+            </ul>
+        </div>
+
+        <div class="body">
+            <div class="content">
+                <ul>
+                    <li>
+                        <ul>
+                            <li>
+                                <i class='bx bxl-creative-commons'></i>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li>
+                                        <h3>
+                                            Suitable prices
+                                        </h3>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            We offer you the best price plans and various payment systems
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <ul>
+                            <li>
+                                <i class='bx bx-globe'></i>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li>
+                                        <h3>
+                                            Multiple languages
+                                        </h3>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Multiple languages ​​according to the client's request, and in proportion to
+                                            his audience and application environment.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <ul>
+                            <li>
+                                <i class='bx bx-support'></i>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li>
+                                        <h3>
+                                            Technical Support
+                                        </h3>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            We offer a free technical support service for a period of 6 months to a year
+                                            for projects
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="content">
+                <ul>
+                    <li>
+                        <img src="../Assets/chat-ai-3.png">
+                    </li>
+                </ul>
+            </div>
+
+            <div class="content">
+                <ul>
+                    <li>
+                        <ul>
+                            <li>
+                                <i class='bx bx-line-chart'></i>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li>
+                                        <h3>
+                                            Project study
+                                        </h3>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            We study and analyze the project in detail before starting
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <ul>
+                            <li>
+                                <i class='bx bxs-pen'></i>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li>
+                                        <h3>
+                                            Design accuracy
+                                        </h3>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            We use modern methods of design, which makes the application more attractive
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <ul>
+                            <li>
+                                <i class='bx bx-check-shield'></i>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li>
+                                        <h3>
+                                            Integrated protection
+                                        </h3>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            The best encryption and security methods to reach the highest levels of
+                                            application protection.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- feature section -->
+    <section class="features">
+        <div class="box">
+            <div class="context">
+                <ul>
+                    <li>
+                        <h2>
+                            Control panel features
+                        </h2>
+                    </li>
+                    <li>
+                        <ul class="lastChild">
+                            <li>
+                                User management
+                            </li>
+                            <li>
+                                Conversation management
+                            </li>
+                            <li>
+                                Statistics management
+                            </li>
+                            <li>
+                                Notification management
+                            </li>
+                            <li>
+                                Continuous improvement
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="images">
+                <img src="../Assets/dashboard.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQS section -->
+    <section class="faq">
+        <div class="faq-logo">
+            <h2>FAQ</h2>
+        </div>
+        <div class="content">
+            <div class="container">
+                <div class="accordion accordion_1" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                aria-controls="panelsStayOpen-collapseOne">
+                                Are Android and iPhone applications Native?
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                                <p>
+                                    Yes, Android apps support JellyBean OS and above. It is developed using Java in
+                                    Android Studio, while IOS applications support IOS 8.0 and later versions and are
+                                    developed using Objective C and XCode.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseTwo">
+                                Can I control the application?
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <p>
+                                    Yes, the application is linked to a control panel through which you can monitor and
+                                    manage the entire project.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseThree">
+                                What is included in the 6-month free support?
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <p>
+                                    We guarantee crash and bug fix support for free. Also, during this time, if any
+                                    application update is required along with the update in the operating system. We
+                                    support that too. However, it excludes adding a custom feature from the list.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseFour">
+                                Is the support service provided after the end of the free period?
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <p>
+                                    Yes, we provide excellent paid technical support to our customers. You can take
+                                    advantage of any of the packages and get a quote by specifying additional
+                                    requirements here: info@misterprogramming.com
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="faq-box">
+                    <ul>
+                        <li>
+                            <a href="#FAQS" class="showDetails">
+                                <ul>
+                                    <li>
+                                        <h3>
+                                            Mohamed
+                                        </h3>
+                                    </li>
+                                    <li id="arrow-down">
+                                        <i class='bx bxs-chevrons-down'></i>
+                                    </li>
+                                    <li id="arrow-up">
+                                        <i class='bx bxs-chevrons-up'></i>
+                                    </li>
+                                </ul>
+                            </a>
+                        </li>
+
+                        <li id="answers">
+                            <p>
+                                yes it's native ..
+                            </p>
+                        </li>
+                    </ul>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/basic.js"></script>
+
+</body>
+
+</html>

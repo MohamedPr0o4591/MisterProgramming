@@ -1,0 +1,13 @@
+.service-2 .container .box ul>li>img {
+    max-width: 8rem;
+}
+
+header .content .images img {
+    max-width: 38rem;
+}
+
+@media (min-width:320px) and (max-width :767px) {
+    header .content .images img {
+        max-width: 30rem;
+    }
+}

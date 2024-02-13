@@ -1,0 +1,295 @@
+:root {
+    --color: #fff;
+    --main-color: #010e34;
+    --bg: #333;
+    --shadow-color: rgba(0, 0, 0, .2);
+}
+
+section {
+    margin: 0;
+    transform: scale(1, 1);
+    z-index: 1;
+    opacity: 1;
+    direction: ltr;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.excel {
+    margin: 2rem auto;
+    width: 80%;
+}
+
+.excel h2 {
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: .1em;
+    pointer-events: none;
+}
+
+.excel .box {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.excel .box .content {
+    box-shadow: 0 .1rem .4rem rgba(255, 255, 255, .2);
+    background: #160f4a;
+    border-radius: 1rem;
+    padding: 1rem 5rem;
+}
+
+body.lightMode .excel .box .content {
+    box-shadow: 0 .1rem .4em var(--shadow-color);
+}
+
+body.lightMode .excel .box .content {
+    background: #61c3eb;
+}
+
+body.lightMode .excel .content .firstMenu>ul h2 {
+    border-color: #000;
+}
+
+.excel .content ul span {
+    font-size: 1.5rem;
+}
+
+.excel .content .firstMenu>ul {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+
+.excel .content .firstMenu>ul h2 {
+    border-bottom: 4px solid #fff;
+    font-size: 3rem;
+}
+
+.excel .content .firstMenu>ul i {
+    font-size: 5rem;
+}
+
+.features {
+    background: #160f4a;
+    padding: 2rem 0;
+}
+
+body.lightMode .features {
+    background: #61c3eb;
+}
+
+.features .box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem 0px;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+}
+
+.features .box .images img {
+    max-width: 50rem;
+}
+
+.features .box .context>ul>li h2 {
+    font-size: 2.5rem;
+    pointer-events: none;
+}
+
+.features .box .context .lastChild {
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+    font-size: 1.2rem;
+}
+
+.features .box .context .lastChild li:first-child::before {
+    content: '1- ';
+}
+
+.features .box .context .lastChild li:nth-child(2)::before {
+    content: '2- ';
+}
+
+.features .box .context .lastChild li:nth-child(3)::before {
+    content: '3- ';
+}
+
+.features .box .context .lastChild li:nth-child(4)::before {
+    content: '4- ';
+}
+
+.features .box .context .lastChild li:last-child::before {
+    content: '5- ';
+}
+
+.ordres {
+    margin: 3rem 0;
+}
+
+.ordres>h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    letter-spacing: .1em;
+    pointer-events: none;
+}
+
+.ordres .box {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    gap: 2rem;
+}
+
+.ordres .box .content {
+    box-shadow: 0 .1rem .4rem rgba(255, 255, 255, .2);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+body.lightMode .ordres .box .content {
+    box-shadow: 0 .1rem .4rem var(--shadow-color);
+}
+
+.ordres .box .content:hover {
+    transform: scale(1.05, 1.05);
+}
+
+.ordres .box .content .image,
+.ordres .box .content .context h2 {
+    pointer-events: none;
+    text-align: center;
+}
+
+.ordres .box .content .image img {
+    pointer-events: none;
+    max-width: 14rem;
+}
+
+.ordres .box .content .context p {
+    margin-top: 1rem;
+}
+
+footer {
+    margin: 0;
+    transform: scale(1, 1);
+    opacity: 1;
+}
+
+@media (min-width:1201px) and (max-width :1535px) {
+    * {
+        font-size: 1rem;
+    }
+
+    footer .container .box>ul li>ul a>i {
+        font-size: 2rem;
+    }
+
+    .excel .box .content {
+        padding: 1rem 2rem;
+    }
+
+    .features .box .images img {
+        max-width: 100%;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    #lightMode>i,
+    #darkMode>i {
+        font-size: 1.2rem;
+    }
+
+    .ordres .box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pop-noti .container .box i {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width:768px) and (max-width :1200px) {
+
+    #lightMode i,
+    #darkMode i {
+        font-size: 1.5rem;
+    }
+
+    * {
+        font-size: 1rem;
+    }
+
+    .excel .box {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .features .box {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5rem;
+    }
+
+    .features .box .images img {
+        max-width: 100%;
+    }
+
+    .ordres .box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer .container .box>ul li>ul a>i {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width : 320px) and (max-width :767px) {
+    .excel {
+        width: 100VW;
+    }
+
+    .excel .box,
+    .features .box,
+    .ordres .box {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    * {
+        font-size: 1rem;
+    }
+
+    .features .box .context>ul>li h2 {
+        font-size: 1.5rem;
+    }
+
+    .features .box {
+        gap: 5rem;
+    }
+
+    .features .box .images img {
+        max-width: 100%;
+    }
+
+    .ordres .box .content h2 {
+        font-size: 1.3rem;
+    }
+
+    #lightMode i,
+    #darkMode i,
+    footer .container .box>ul li>ul a>i {
+        font-size: 1.5rem;
+    }
+
+    .excel>h2,
+    .ordres>h2 {
+        font-size: 1.4rem;
+    }
+}

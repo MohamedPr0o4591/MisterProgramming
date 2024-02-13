@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorkSpace</title>
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="shortcut icon" href="Assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+</head>
+
+<body>
+
+    <div class="pop-noti">
+        <div class="container">
+            <div class="box">
+                <div class="images">
+                    <div class="img1">
+                        <i class='bx bxl-instagram-alt'></i>
+                    </div>
+                    <div class="img2">
+                        <i class='bx bxl-facebook'></i>
+                    </div>
+                    <div class="img3">
+                        <i class='bx bxl-whatsapp'></i>
+                    </div>
+                    <div class="img4" id="close-icon">
+                        <i class='bx bx-x'></i>
+                    </div>
+                </div>
+                <div class="content">
+                    <h4>
+                        Need help?
+                    </h4>
+                    <small>
+                        Contact us faster
+                    </small>
+                </div>
+
+                <div class="outline">
+                    <div class="child">
+                        <div class="header">
+                            <ul>
+                                <li><i class='bx bxl-whatsapp'></i></li>
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <h3>
+                                                Start the conversation
+                                            </h3>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                Start a quick chat with one of Mr. Programming's clients
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="content">
+                            <ul>
+                                <li>
+                                    <p>
+                                        Choose the required section and the Mr. Programming team will respond to you as
+                                        soon as possible
+                                    </p>
+                                </li>
+                                <li class="whatsapp">
+                                    <a href="https://wa.me/+201010662336/" target="_blank">
+                                        <ul>
+                                            <li>
+                                                <i class='bx bxl-whatsapp'></i>
+                                            </li>
+                                            <ul>
+                                                <li>
+                                                    <h4>
+                                                        Sales Team
+                                                    </h4>
+                                                </li>
+                                                <li>
+                                                    <p>
+                                                        Contact us for new requests
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                            <li>
+                                                <i class='bx bx-link-external' id="link-icon"></i>
+                                            </li>
+                                        </ul>
+                                    </a>
+                                </li>
+
+                                <li class="fb">
+                                    <a href="https://www.facebook.com/misterprogramming/" target="_blank">
+                                        <ul id="fb-link">
+                                            <li>
+                                                <i class='bx bxl-facebook'></i>
+                                            </li>
+                                            <ul>
+                                                <li>
+                                                    <h4>
+                                                        Sales Team
+                                                    </h4>
+                                                </li>
+                                                <li>
+                                                    <p>
+                                                        Contact us for new requests
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                            <li>
+                                                <i class='bx bx-link-external' id="link-icon"></i>
+                                            </li>
+                                        </ul>
+                                    </a>
+                                </li>
+
+                                <li class="insta">
+                                    <a href="https://www.linkedin.com/company/misterprogramming/" target="_blank">
+                                        <ul id="insta-link">
+                                            <li>
+                                                <i class='bx bxl-linkedin'></i>
+                                            </li>
+                                            <ul>
+                                                <li>
+                                                    <h4>
+                                                        Sales Team
+                                                    </h4>
+                                                </li>
+                                                <li>
+                                                    <p>
+                                                        Contact us for new requests
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                            <li>
+                                                <i class='bx bx-link-external' id="link-icon"></i>
+                                            </li>
+                                        </ul>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav>
+        <div class="logo">
+            <img src="Assets/logo.png" title="logo-site" id="logoSite">
+            <canvas></canvas>
+        </div>
+
+        <div class="navbar ">
+            <ul class="navbar-largeMorror ">
+                <li>
+                    <a href="#home">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#services">
+                        Services
+                    </a>
+                </li>
+                <li>
+                    <a href="#projects">
+                        Projects
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact">
+                        Contact
+                    </a>
+                </li>
+                <li>
+                    <a href="#ourInfo">
+                        About us
+                    </a>
+                </li>
+                <li>
+                    <a href="#blog">
+                        Blog
+                    </a>
+                </li>
+                <li id="darkMode">
+                    <i class='bx bxs-moon'></i>
+                </li>
+                <li id="lightMode">
+                    <i class='bx bx-sun'></i>
+                </li>
+            </ul>
+            <ul class="navbar-screen-768">
+                <li id="darkMode">
+                    <i class='bx bxs-moon'></i>
+
+                </li>
+                <li id="lightMode">
+                    <i class='bx bx-sun'></i>
+
+                </li>
+                <li id="list_open">
+                    <a href="#list" id="open">
+                        <i class='bx bx-list-ul'></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#list" id="close">
+                        <i class='bx bx-list-ul'></i>
+                    </a>
+                </li>
+                <li>
+                    <ul>
+                        <li>
+                            <a href="#home">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#services">
+                                Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#projects">
+                                Projects
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contact">
+                                Contact
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#ourInfo">
+                                About us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#blog">
+                                Blog
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <div class="container_all">
+        <header id="home">
+            <div class="images">
+                <img src="Assets/stars1.webp" id="stars">
+                <!-- <img src="Assets/moon2.webp" id="moon"> -->
+                <i class='bx bxs-moon' id="moon2"></i>
+                <i class='bx bxs-circle' id="sun2"></i>
+            </div>
+            <div class="content ">
+                <div class="text ">
+                    <ul>
+                        <li>
+                            <h3>Mr. Programming</h3>
+                        </li>
+                        <li>
+                            <p>
+                                A company specializing in providing projects and many advantages that you will find only
+                                with us
+                            </p>
+                        </li>
+                        <li class="largeMirror">
+                            <a href="#projects">
+                                Examples of our recent projects
+                            </a>
+                        </li>
+                        <li class="Screen-768">
+                            <a href="#projects">
+                                Take a look
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="images">
+                    <img src="Assets/Home-About.gif">
+                </div>
+            </div>
+        </header>
+
+        <!-- services section design -->
+        <section class="services" id="services">
+            <h2 class="heading">Services</h2>
+            <h5 class="heading">What do we offer?</h5>
+
+            <div class="services-container">
+                <div class="services-box box-1">
+                    <div class="image">
+                        <img src="Assets/service-1.png">
+                    </div>
+                    <div class="content">
+                        <h2>Design services</h2>
+                        <p>
+                            There is no doubt that design is the most important thing that attracts customers, so we
+                            offer a
+                            professional design service
+                        </p>
+                    </div>
+                </div>
+                <div class="services-box box-2">
+                    <div class="image">
+                        <img src="Assets/service-2.png">
+                    </div>
+                    <div class="content">
+                        <h2>Website programming</h2>
+                        <p>
+                            A site that best expresses you and explains your services and ideas or what you offer in
+                            general.
+                        </p>
+                    </div>
+                </div>
+                <div class="services-box box-3">
+                    <div class="image">
+                        <img src="Assets/service-3.png">
+                    </div>
+                    <div class="content">
+                        <h2>Application programming</h2>
+                        <p>
+                            We offer you seamless application programming with very attractive designs and clean code.
+                        </p>
+                    </div>
+                </div>
+                <div class="services-box box-4">
+                    <div class="image">
+                        <img src="Assets/service-4.png">
+                    </div>
+                    <div class="content">
+                        <h2>Seo services</h2>
+                        <p>
+                            We are working to raise your site's ranking in Google and other search engines through the
+                            SEO
+                            service.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="links">
+                <a href="##" onclick="addChooseItems()">
+                    More of our services
+                </a>
+            </div>
+            <div class="moreServices">
+
+            </div>
+
+        </section>
+
+        <!-- our projects -->
+        <section class="projects" id="projects">
+            <h2 class="heading">Projects</h2>
+            <h5 class="heading">Our most important business</h5>
+            <div class="projects-wrapper">
+                <div class="project-container mySwiper">
+                    <div class="projects-box swiper-wrapper">
+                        <div class="prjects-slide swiper-slide">
+                            <div class="images">
+                                <a href="single page/ser-taxi.html" target="_blank">
+                                    <img src="Assets/ser-taxi-3.png">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <a href="#">
+                                    SER Taxi Application
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="prjects-slide swiper-slide">
+                            <div class="images">
+                                <a href="single page/chat_ai.html" target="_blank">
+                                    <img src="Assets/chatAI-1.jpg">
+                                </a>
+
+                            </div>
+                            <div class="content">
+                                <a href="#">
+                                    chat AI Application
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="prjects-slide swiper-slide">
+                            <div class="images">
+                                <a href="single page/taya_medical.html" target="_blank">
+                                    <img src="Assets/TMedical.jpg">
+                                </a>
+
+                            </div>
+                            <div class="content">
+                                <a href="#">
+                                    TAYA Medical
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="prjects-slide swiper-slide">
+                            <div class="images">
+                                <a href="single page/zola_store.html" target="_blank">
+
+                                    <img src="Assets/zola_store-1.jpg">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <a href="#">
+                                    ZOLA Store Application
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="prjects-slide swiper-slide">
+                            <div class="images">
+                                <a href="single page/atlap_app.html" target="_blank">
+
+                                    <img src="Assets/atlap_app-1.jpg">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <a href="#">
+                                    ATLAP APP
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="prjects-slide swiper-slide">
+                            <div class="images">
+                                <a href="single page/games_card.html" target="_blank">
+
+                                    <img src="Assets/gameCard-1.jpg">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <a href="#">
+                                    Games Card APP
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="prjects-slide swiper-slide">
+                            <div class="images">
+                                <a href="single page/m-wallet.html" target="_blank">
+
+                                    <img src="Assets/M-WalletApp.jpg">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <a href="#">
+                                    M Wallet APP
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="swiper-pagination"></div> -->
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="box-start-side">
+                    <ul>
+                        <li>
+                            <h3>
+                                Customers who are happy to work with us
+                            </h3>
+                        </li>
+                        <li>
+                            <p>
+                                Our company seeks to increase the number of customers who are satisfied with our service
+                                through horizontal expansion of services
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box-end-side">
+                    <div class="child-item">
+                        <img src="Assets/logo_ser taxi.png">
+                    </div>
+                    <div class="child-item">
+                        <img src="Assets/logo_zolaStore.png">
+                    </div>
+                    <div class="child-item">
+                        <img src="Assets/logo_atlapApp.png">
+                    </div>
+
+                    <div class="child-item">
+                        <img src="Assets/logo_mWalletApp.png">
+                    </div>
+                    <div class="child-item">
+                        <img src="Assets/logo_gamesCardApp.png">
+                    </div>
+                    <div class="child-item">
+                        <img src="Assets/logo_chatAI.png">
+                    </div>
+                </div>
+        </section>
+
+
+        <!-- contact section design -->
+        <section class="contact" id="contact">
+
+            <h2 class="heading">Contact</h2>
+            <div class="container">
+                <form>
+                    <div class="input-box">
+                        <input id="name" type="text" placeholder="Full Name (optional)">
+                        <input id="email" type="email" placeholder="Enter your business mail" required="required">
+                    </div>
+
+                    <div class="input-box">
+                        <input id="phone" type="number" placeholder="Enter your phone number" required="required">
+                        <input id="anotherEmail" type="email" placeholder="Enter another e-mail (optional)">
+                    </div>
+
+                    <textarea id="message" name="" id="" cols="30" rows="10"
+                        placeholder="Leave here your message"></textarea>
+                    <input type="submit" id="submit" value="Send Message">
+                    <!-- <button id="btn">Send</button> -->
+                </form>
+            </div>
+        </section>
+
+        <!-- about our compagny section design -->
+        <section class="ourInfo" id="ourInfo">
+            <h2 class="heading">
+                Some of the opinions of clients that we had the honor to work with
+            </h2>
+
+            <div class="container">
+                <div class="box">
+                    <div class="images">
+                        <img src="Assets/photo_2023-07-13_06-52-04.jpg" alt="">
+                        <div class="content">
+                            <h3>Dr. Mohamed Ali</h3>
+                            <p>
+                                TAYA Medical App
+                            </p>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <p>
+                            مشكورين علي التعاون الرائع وحقيقي سعدت جدا بالتعاون معكم
+                        </p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="images">
+                        <img src="Assets/photo_2023-07-13_06-52-04.jpg" alt="">
+                        <div class="content">
+                            <h3>Abdellah Sharqawy</h3>
+                            <p>ZOLA Store</p>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <p>
+
+                            ألف شكر ليكم علي مجهودكم في عمل التطبيق اتشرفت بمعرفتكم
+                        </p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="images">
+                        <img src="Assets/photo_2023-07-13_06-52-04.jpg" alt="">
+                        <div class="content">
+                            <h3>Mohamed Adel</h3>
+                            <p>SER Taxi</p>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <p>
+
+                            التطبيق رائع جدا والتعامل يستمر باذن الله في المشاريع القادمه..كل الشكر لفريق العمل
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="links">
+                <a href="##" onclick="addChooseInfo()">
+                    Read more about us
+                </a>
+            </div>
+            <div class="moreInfo">
+
+            </div>
+
+        </section>
+
+        <!-- our blogger section design -->
+        <section class="blog" id="blog">
+            <h2 class="heading">
+                Important articles for you
+            </h2>
+
+            <div class="blog-container">
+                <div class="blog-box">
+                    <div class="images">
+                        <img src="Assets/how_to_become_A_programmer.avif" alt="">
+                    </div>
+                    <div class="content">
+                        <a href="#">
+                            <h3>Website design company in Egypt</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="blog-box">
+                    <div class="images">
+                        <img src="Assets/banner2.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <a href="#">
+                            <h3>
+                                What is the difference between the native application and the cross platform
+                            </h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="blog-box">
+                    <div class="images">
+                        <img src="Assets/1314762_The_best_apps_for_dieting_and_weight_loss_732x549_1Feature.webp"
+                            alt="">
+                    </div>
+                    <div class="content">
+                        <a href="#">
+                            <h3>
+                                The best application programming company
+                            </h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="blog-box">
+                    <div class="images">
+                        <img src="Assets/photo_2023-07-13_06-57-14.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <a href="#">
+                            <h3>
+                                An application programming company in Tanta
+                            </h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer design -->
+        <footer class="footer">
+            <div class="container">
+                <div class="box">
+                    <ul>
+                        <li class="logo">
+                            <img src="Assets/logo.png" title="logo-site" id="logoSite">
+                        </li>
+                        <li class="logo">
+                            <p>
+                                Mr. Programming is a mobile application and web design programming and design company.
+                                Since
+                                2023 and
+                                We are working on
+                                Developing and programming smart phone applications and designing websites. Contact us
+                                now
+                                .. Our team is in
+                                waiting for you
+                            </p>
+                        </li>
+
+                        <li>
+                            <ul class="social-media">
+                                <li>
+                                    <a href="https://www.facebook.com/misterprogramming/" target="_blank">
+                                        <i class='bx bxl-facebook'></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/company/misterprogramming/" target="_blank">
+                                        <i class='bx bxl-linkedin'></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://wa.me/+201010662336/" target="_blank">
+                                        <i class='bx bxl-whatsapp'></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="box">
+                    <ul>
+                        <li>
+                            <h2>Contact with us</h2>
+                        </li>
+                        <li>
+                            <p>
+                                Phone: +201010662336
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Mail: Info@misterprogramming.com
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="box">
+                    <ul>
+                        <li>
+                            <h2>Quick links</h2>
+                        </li>
+                        <li>
+                            <a href="#home">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#services">
+                                Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#projects">
+                                Projects
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contact">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="box">
+                    <ul>
+                        <li>
+                            <h2>Latest Our projects</h2>
+                        </li>
+                        <li>
+                            <p>ZOLA App</p>
+                        </li>
+                        <li>
+                            <p>SER Taxi</p>
+                        </li>
+                        <li>
+                            <p>TAYA Medical App</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <span></span>
+        </footer>
+    </div>
+
+    <!-- swiper js -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- custom design js -->
+    <script src="js/script.js"></script>
+    <script src="js/basic.js"></script>
+
+    <script>
+        let submit = document.querySelector('form');
+        submit.addEventListener('submit', e => {
+            e.preventDefault();
+            // console.log('clicked');
+
+            Email.send({
+                SecureToken: "76b94c11-337b-40cd-a2f0-19316e5573ef",
+                To: 'mohamedwork459@gmail.com',
+                From: document.getElementById('email').value,
+                Subject: document.getElementById('name').value,
+                Body: `
+                New message from ${document.getElementById('name').value} (${document.getElementById('email').value})
+                
+                Name : ${document.getElementById('name').value}
+                E-mail : ${document.getElementById('email').value}
+                Another e-mail : ${document.getElementById('anotherEmail').value}
+
+                Phone : ${document.getElementById('phone').value}
+                <address> Message : ${document.getElementById('message').value}  </address>
+                `
+            }).then(
+                message => alert("Your message sent successfully")
+            );
+        });
+    </script>
+</body>
+
+</html>
